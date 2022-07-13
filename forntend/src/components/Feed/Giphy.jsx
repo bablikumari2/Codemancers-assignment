@@ -30,15 +30,16 @@ let GifSearch = () => {
 
     return (
         <>
+        <div className='cont'>
             <div className='gif_search'>
                 <GifIcon fontSize='large' margin-top='100px' />
                 <input type="text"
                     placeholder="Search Gifs"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                   
+
                 />
-<button  onClick={searchGif}>GO</button>
+                <button onClick={searchGif}>GO</button>
 
             </div>
 
@@ -48,13 +49,13 @@ let GifSearch = () => {
                     gifs.map((gif) => {
                         return (
                             <div className="item">
-                                < img  src={gif} />
+                                < img src={gif} />
                             </div>
                         )
                     })
                 }
             </div>
-
+            </div>
 
         </>
     );
