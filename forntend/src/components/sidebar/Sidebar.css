@@ -1,0 +1,15 @@
+.sidebarrow{
+display: flex;
+padding: 5px 20px;
+margin-bottom: 10px;
+align-items: center;
+}
+.sidebarrow p{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.sidebar{
+    flex: 0.33;
+    position: sticky;
+    width: 80px;
+}
